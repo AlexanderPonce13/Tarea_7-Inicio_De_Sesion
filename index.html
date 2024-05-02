@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Abre el elemento raíz <html> y especifica el idioma de la página como español -->
+<head> <!-- Abre la sección del encabezado de la página -->
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres del documento como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define la etiqueta de vista para el diseño adaptable (responsive) -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlaza el archivo de estilo externo "style.css" al documento HTML -->
+    <title>INICIO DE SESIÓN HTML & CSS</title> <!-- Establece el título de la página -->
+</head>
+<body> <!-- Abre el cuerpo principal de la página -->
+    <div class="imgcontainer"> <!-- Crea un contenedor <div>  -->
+        <img src="logo.png" alt="Fondo" class="fondo"> <!-- Inserta una imagen con la ruta "logo.png" y el texto alternativo "Fondo" -->
+    </div> 
+    <form id="loginForm"> <!-- Inicia un formulario con el ID "loginForm" -->
+        <div class="container"> 
+            <label for="uname"><b>Nombre de usuario</b></label> <!-- Crea una etiqueta de texto para el campo de nombre de usuario -->
+            <input type="text" id="uname" placeholder="Ingrese su nombre de usuario" required> <!-- Crea un campo de entrada de texto para el nombre de usuario -->
+            <label for="psw"><b>Contraseña</b></label> <!-- Crea una etiqueta de texto para el campo de contraseña -->
+            <input type="password" id="psw" placeholder="Ingrese su contraseña" required> <!-- Crea un campo de entrada de contraseña -->
+            <button type="button" id="loginButton">Iniciar sesión</button> <!-- Crea un botón para iniciar sesión -->
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Recuerdame <!-- Crea un checkbox para recordar el inicio de sesión -->
+            </label>
+        </div>
+        <div class="container"> <!-- Abre otro contenedor <div> con la clase "container" -->
+            <button type="button" class="cancelbtn">Cancelar</button> <!-- Crea un botón para cancelar el inicio de sesión -->
+            <span class="psw"> <a href="#"> ¿Olvidaste tu contraseña?</a></span> <!-- Crea un enlace para recuperar la contraseña -->
+        </div> 
+    </form> <!-- Cierra el formulario -->
+    <script src="script.js"></script> <!-- Enlaza el archivo de script externo "script.js" al documento HTML -->
+</body> <!-- Cierra el cuerpo de la página -->
+</html> <!-- Cierra el elemento HTML principal -->
